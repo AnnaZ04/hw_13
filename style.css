@@ -1,0 +1,26 @@
+
+h2{
+  text-align: center;
+}
+
+.figure {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+   width: 284px;
+  height: 284px;
+}
+
+.square {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: example 5s infinite;
+}
+
+@keyframes example{
+  0%{transform: translate(0, 0);fill: red; }
+  25% { transform: translate(200px, 0); fill: yellow; }
+  50% { transform: translate(200px, 200px); fill: blue; }
+  75% { transform: translate(0, 200px); fill: green; }
+  100% { transform: translate(0, 0); fill: red; }
+}
